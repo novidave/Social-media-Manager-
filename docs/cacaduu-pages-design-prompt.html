@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cacaduu Pages Prompt</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;750&display=swap">
+<style>
+:root{--ink:#242824;--muted:#596650;--border:#e8eae4;--bg:#fcfcfa;--card:#fff;--green:#2d553c;--sage:#edf2e8;--btn:#b0ec95;--btn-b:#a8df91;--btn-t:#233a2c;--code:#f6f7f3}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 Inter,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:40px 16px 60px}
+.brand{font-size:20px;font-weight:750;letter-spacing:-1px;display:flex;align-items:center;gap:6px}
+.brand i{width:7px;height:7px;border-radius:50%;background:#749458;display:inline-block;margin-top:8px}
+.eyebrow{font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#7c8b6c;margin:36px 0 8px}
+h1{font-size:29px;font-weight:650;letter-spacing:-1.1px;line-height:1.25;margin:0 0 8px}
+h1 em{font-family:Georgia,serif;font-weight:400;color:#7b955d}
+.lead{color:var(--muted);margin:0 0 28px;max-width:640px}
+.swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:28px}
+.sw{border:1px solid var(--border);border-radius:9px;background:var(--card);overflow:hidden;font-size:11px}
+.sw div{height:44px;border-bottom:1px solid var(--border)}
+.sw span{display:block;padding:6px 9px 0;font-weight:600}.sw code{display:block;padding:0 9px 8px;color:var(--muted);font-size:10px}
+.card{background:var(--card);border:1px solid #e4e7dd;border-radius:10px;overflow:hidden}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid var(--border)}
+.bar strong{font-size:13px;font-weight:600}
+button{font:inherit;cursor:pointer;min-height:38px;padding:9px 16px;border-radius:7px;font-weight:550;font-size:13px;background:var(--btn);border:1px solid var(--btn-b);color:var(--btn-t)}
+button:focus-visible{outline:3px solid #9aae7c;outline-offset:3px}
+pre{margin:0;padding:20px 18px;background:var(--code);font:12.5px/1.7 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;overflow-wrap:anywhere;color:#3a4235}
+.note{color:var(--muted);font-size:12px;margin-top:20px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e9ece5;--muted:#a9b59d;--border:#2f362d;--bg:#161a16;--card:#1d221c;--code:#191e18}}
+:root[data-theme="dark"]{--ink:#e9ece5;--muted:#a9b59d;--border:#2f362d;--bg:#161a16;--card:#1d221c;--code:#191e18}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) pre{color:#d5dccd}}
+:root[data-theme="dark"] pre{color:#d5dccd}
+@media (max-width:560px){.swatches{grid-template-columns:repeat(2,1fr)}}
+</style></head><body><div class="wrap">
+<div class="brand">social studio<i></i></div>
+<p class="eyebrow">Design prompt · Cacaduu Pages</p>
+<h1>Same layout, <em>same</em> look.</h1>
+<p class="lead">Paste this prompt into Cacaduu Pages. It sets Social Studio’s fonts (Inter with Georgia accents), colours and component style, and fixes the layout as it is today.</p>
+<div class="swatches"><div class="sw"><div style="background:#fcfcfa"></div><span>Background</span><code>#fcfcfa</code></div><div class="sw"><div style="background:#ffffff"></div><span>Surface</span><code>#ffffff</code></div><div class="sw"><div style="background:#242824"></div><span>Text</span><code>#242824</code></div><div class="sw"><div style="background:#596650"></div><span>Secondary</span><code>#596650</code></div><div class="sw"><div style="background:#b0ec95"></div><span>Primary</span><code>#b0ec95</code></div><div class="sw"><div style="background:#2d553c"></div><span>Deep green</span><code>#2d553c</code></div><div class="sw"><div style="background:#edf2e8"></div><span>Selected</span><code>#edf2e8</code></div><div class="sw"><div style="background:#e8eae4"></div><span>Border</span><code>#e8eae4</code></div></div>
+<div class="card"><div class="bar"><strong>Prompt</strong><button id="copy" type="button">Copy prompt</button></div>
+<pre id="prompt">Design a social media planning workspace called "Social Studio".
+Use the exact font, style and layout below. Do not rearrange, add or remove layout regions.
+
+━━ FONTS ━━
+- Interface font: Inter (Google Fonts, weights 400–800), fallback -apple-system, "Segoe UI", sans-serif.
+- Editorial accent font: Georgia, serif. Use it ONLY for illustration headlines, the home
+  welcome heading, the Insights "takeaway" heading, the Start Page name and the italic
+  word in the landing hero. Illustration headlines are Georgia italic.
+- Base text 14px, line-height 1.5; paragraphs line-height 1.65.
+- Page title (h1): 29px, weight 650, letter-spacing -1.1px, line-height 1.25.
+- Section title (h2): 17px, weight 600, letter-spacing -0.4px.
+- Body/post text 13px. Navigation 13px. Metadata 10–12px.
+- Small uppercase labels: 10px, weight 600, letter-spacing 0.8px, muted sage grey.
+- Logo wordmark "social studio": lowercase, 20px, weight 750, letter-spacing -1px, followed by
+  a 7px round green dot (#749458). Logo mark: three stacked dark-green bars (#2d4137).
+
+━━ COLOURS ━━
+- Page background #fcfcfa (warm off-white). Panels, cards, sidebar, top bar #ffffff.
+- Main text #242824. Secondary text #596650. Muted text #737972.
+- Borders #e8eae4 (cards #e4e7dd), always 1px.
+- Primary button: light green #b0ec95, 1px border #a8df91, dark-green text #233a2c, no shadow.
+- Deep green accent #2d553c; selected tab underline #557c43; selected tab text #354e30.
+- Selected nav item background #edf2e8, text #2f4932.
+- Soft sage surfaces: #f4f5f0 (board columns), #f2f5eb (info banners), #eaf0dd (welcome banner).
+- Status badges: queued #edf2e6 / #5a7146, draft #f1efea / #9a8c74, approval #fff3db / #967432.
+- Illustration tiles: sage #e8ecdc with text #46563b; peach #f1e0d6 / #805e48; blue #dae4e8 / #4a6573.
+- Channel icons: small filled rounded squares in the platform's colour with a white glyph.
+- Focus ring: 3px #9aae7c, offset 3px.
+
+━━ SHAPE AND DEPTH ━━
+- Radius: buttons and inputs 6–7px, cards 9–10px, banners and dialogs 12–14px, tags 4px.
+- Shadows almost invisible (e.g. 0 2px 4px rgba(42,61,26,0.01)). Separation comes from borders.
+- Spacing scale: 4, 8, 12, 16, 24, 32, 40px. Calm, airy, generous white space.
+- Buttons: min-height 38px, padding 9px 16px, weight 550. Secondary buttons white with a
+  1px #dedfd8 border. Icons are thin outline glyphs.
+
+━━ LAYOUT (keep exactly) ━━
+Desktop shell:
+1. Left sidebar, fixed, 248px wide, white, 1px right border, padding 28px 17px. Top to bottom:
+   logo · workspace switcher card (square avatar, "My workspace" / "Personal workspace", chevron)
+   · full-width "+ New post" primary button · nav: Your workspace, Create, Publish (with count),
+   Community, Insights · "CHANNELS 3 +" label · "All channels" and one row per channel
+   (icon, name, network, count) · "+ Add a demo channel" · pinned to bottom: Collaborate,
+   Start Page, Settings, then a small note with a green dot.
+2. Top bar, 69px high, white, 1px bottom border, padding 0 42px: breadcrumbs left
+   ("Workspace / Publish"); right side: "Demo mode" pill, round "?" icon button, round avatar.
+3. Main area, padding 37px 42px, max-width 1500px, centred.
+   Page header row: h1 + one-line subtitle left; secondary + primary actions right.
+
+Pages (same shell on every page):
+- Publish: tabs Queue / Drafts / For approval / Sent, each with a small count chip; List | Calendar
+  segmented toggle on the right; below, a search field ("Search content or tags") left and
+  "All channels" select + "UTC" right. Queue column max-width 850px, centred: day heading
+  ("Sunday, November 8" left, time right) then post cards. Post card: channel avatar + name +
+  network, status badge top-right; post text; full-width illustration tile 258px high;
+  tags; footer row with actions, separated by a 1px top border.
+- Calendar view: 7-column month grid with a weekday header row, 125px-tall day cells,
+  today shown as a filled green circle, posts as small sage chips with a green left border.
+- Your workspace (home): large sage welcome banner (Georgia 36px heading, small uppercase
+  eyebrow, tilted card illustration on the right), then a row of 3 equal stat cards.
+- Create: idea board, 4 equal columns on sage #f4f5f0, white idea cards inside.
+- Community: tabs, then a list of comment cards (round avatar, author + network, text, actions).
+- Insights: two columns 2.3fr / 1fr: chart panel left, sage "takeaway" panel right; table below.
+- Start Page: editor form left (1.2fr), phone-shaped preview right (1fr, 36px radius, white frame).
+- Settings: two-column grid of white panels.
+- Composer: centred modal dialog, max 660px wide, 32px padding, blurred backdrop.
+- Landing page: nav row, centred sage hero with a very large Inter headline (up to 74px, weight 550,
+  letter-spacing -3px) containing one Georgia italic word, then 4 feature cards.
+
+Responsive (same structure, only narrower):
+- ≤1150px: sidebar 220px, main padding 27px.
+- ≤900px: sidebar 190px; Insights, Settings and Start Page become one column.
+- ≤650px: sidebar hidden behind a menu button in the top bar (58px high); content full width
+  with 19px side padding; calendar and board scroll horizontally inside their containers.
+
+Tone: calm, editorial, friendly. Sentence case everywhere. Light theme only.</pre></div>
+<p class="note">Source of truth: <code>src/styles.css</code>. Swap the FONTS and COLOURS sections if you want Cacaduu’s own brand; keep LAYOUT unchanged.</p>
+</div>
+<script>
+document.getElementById("copy").addEventListener("click",async e=>{const t=document.getElementById("prompt").textContent;try{await navigator.clipboard.writeText(t);e.target.textContent="Copied"}catch{const r=document.createRange();r.selectNodeContents(document.getElementById("prompt"));const s=getSelection();s.removeAllRanges();s.addRange(r);e.target.textContent="Selected — press Ctrl/Cmd+C"}setTimeout(()=>e.target.textContent="Copy prompt",2500)});
+</script></body></html>
